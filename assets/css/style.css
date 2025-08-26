@@ -1,0 +1,393 @@
+main {
+    padding: 0 70px;
+}
+
+.i-1 {
+    color: var(--color-2);
+}
+
+.i-2 {
+    color: var(--color-1);
+}
+
+.i-3 {
+    color: var(--color-5);
+}
+
+#highlight {
+    display: inline-block;
+    background: var(--side-color);
+}
+
+.hero {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero .left .head {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    gap: 10px;
+}
+
+.hero .left .head .title {
+    font-size: 30px;
+}
+
+.hero .left .head .subtitle {
+    font-size: 16px;
+}
+
+#start {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background: var(--accent-color);
+    padding: 7px 17px;
+    border-radius: 10px;
+    color: white;
+    max-width: 30%;
+    overflow: hidden;
+}
+
+#start span:first-child {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: transform 0.3s ease;
+}
+
+#start #arrow {
+    display: inline-flex;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+}
+
+#start:hover span:first-child {
+    transform: translateX(-8px);
+}
+
+#start:hover #arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hero img {
+    width: 30%;
+    height: auto;
+}
+
+.benefit {
+    display: block;
+    margin-top: 50px;
+}
+
+.benefit .container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.benefit .container .card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-size: 150px;
+    background-repeat: no-repeat;
+    max-height: 30vh;
+}
+
+.benefit .bg-card-1 {
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)),
+        url("/assets/img/icons/money-cut.png") no-repeat right bottom / 200px;
+    background-position: right 10px bottom;
+}
+
+.benefit .bg-card-2 {
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)),
+        url("/assets/img/icons/phone.png") no-repeat right bottom / 200px;
+    background-position: right 10px bottom;
+}
+
+.benefit .bg-card-3 {
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)),
+        url("/assets/img/icons/console.png") no-repeat right bottom / 200px;
+    background-position: right 10px bottom;
+}
+
+.benefit .bg-card-4 {
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)),
+        url("/assets/img/icons/sleep.png") no-repeat right bottom / 200px;
+    background-position: right 10px bottom;
+}
+
+.benefit .bg-card-5 {
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)),
+        url("/assets/img/icons/rich-people.png") no-repeat right bottom / 200px;
+    background-position: right 10px bottom;
+}
+
+.benefit .card .title {
+    padding: 10px 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.benefit .card .subtitle {
+    padding: 20px;
+}
+
+.keduluan {
+    margin-top: 50px;
+}
+
+.keduluan .container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.keduluan .container .card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: rgb(223, 223, 223);
+    padding: 20px;
+    max-height: 55vh;
+}
+
+.keduluan .container i {
+    font-size: 20px;
+    background: white;
+    padding: 7px;
+    max-width: fit-content;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.keduluan .container .title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.iphone {
+    margin-top: 50px;
+}
+
+.iphone .container {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.iphone .container .card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: solid 1px gray;
+}
+
+.iphone .container .top {
+    padding: 10px;
+    border-radius: 10px 0;
+    background: var(--accent-color);
+    color: white;
+    text-align: center;
+}
+
+.iphone .container .card i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.iphone .container .card .title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.iphone .container .card .price .tag {
+    font-size: 30px;
+}
+
+.iphone .container .card .description {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.iphone .container .low {
+    padding: 20px;
+}
+
+.iphone .container .high {
+    transform: translateY(-50px);
+    padding: 0;
+    border-radius: 10px 0;
+}
+
+.iphone .container .card .content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.start-now {
+    margin-top: 50px;
+    display: block;
+    min-height: 30vh;
+    background: var(--color-3);
+}
+
+.start-now .container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+}
+
+.start-now .container .content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin-bottom: 30px;
+}
+
+.start-now .container .title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.start-now .container .description {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .hero img {
+        align-items: start;
+        width: 300px;
+        height: auto;
+    }
+
+    .hero .left .head {
+        max-width: 100%;
+    }
+
+    .keduluan .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .iphone .container {
+        margin-top: 50px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .iphone .container .high,
+    .iphone .container .low {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 767px) {
+    main {
+        padding: 0 30px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        align-items: start;
+        gap: 50px;
+    }
+
+    .hero img {
+        display: block;
+        margin: 0 auto;
+        width: 250px;
+        height: auto;
+    }
+
+    .hero .left .head {
+        max-width: 100%;
+    }
+
+    .hero .left #start {
+        max-width: 70%;
+    }
+
+    .benefit .container {
+        grid-template-columns: 1fr;
+    }
+
+    .benefit .bg-card-1,
+    .benefit .bg-card-2,
+    .benefit .bg-card-3,
+    .benefit .bg-card-4,
+    .benefit .bg-card-5 {
+        background-position: right 2px bottom;
+    }
+
+    .keduluan .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .iphone .container {
+        margin-top: 50px;
+        grid-template-columns: 1fr;
+    }
+
+    .iphone .container .high,
+    .iphone .container .low {
+        transform: translateY(0);
+    }
+
+    .start-now {
+        display: block;
+    }
+
+    .start-now .container {
+        padding: 30px;
+    }
+
+    .start-now .container .content {
+        max-width: 100%;
+    }
+
+    .start-now .container #start {
+        max-width: 100%;
+    }
+
+}
