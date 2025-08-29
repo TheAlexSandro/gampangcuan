@@ -24,11 +24,58 @@ body,
 html {
     font-family: "Poppins", sans-serif;
     overflow: auto;
+    overflow-x: hidden;
     max-width: 100%;
     min-height: 100vh;
 }
 
+main {
+    padding: 0 70px;
+}
+
+#start {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background: var(--color-2);
+    padding: 7px 17px;
+    border-radius: 10px;
+    color: white;
+    max-width: 40%;
+    overflow: hidden;
+}
+
+#start span:first-child {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: transform 0.3s ease;
+}
+
+#start #arrow {
+    display: inline-flex;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+}
+
+#start:hover span:first-child {
+    transform: translateX(-8px);
+}
+
+#start:hover #arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 nav {
+    z-index: 999999999;
+    position: fixed;
+    width: 100%;
+    background: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -167,8 +214,37 @@ nav .menu ul li.has-dropdown:hover .dropdown {
     user-select: none;
 }
 
-main {
-    padding: 20px 30px;
+.start-now {
+    display: block;
+    min-height: 30vh;
+    background: var(--color-3);
+}
+
+.start-now .container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+}
+
+.start-now .container .content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin-bottom: 30px;
+}
+
+.start-now .container .title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.start-now .container .description {
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 footer {
@@ -284,5 +360,23 @@ footer {
     .footer-copyright hr {
         width: 100%;
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .start-now {
+        display: block;
+    }
+
+    .start-now .container {
+        padding: 30px;
+    }
+
+    .start-now .container .content {
+        max-width: 100%;
+    }
+
+    .start-now .container #start {
+        max-width: 100%;
     }
 }
