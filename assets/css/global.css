@@ -328,10 +328,6 @@ footer {
         left: 0;
     }
 
-    nav .menu ul li.has-dropdown:hover .dropdown {
-        display: none;
-    }
-
     nav .menu ul li.has-dropdown.active .dropdown {
         display: flex;
     }
